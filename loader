@@ -1,0 +1,306 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Top = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Trans = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Load = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Main.Position = UDim2.new(0.40751043, 0, 0.431506842, 0)
+Main.Size = UDim2.new(0.184283733, 0, 0.241095886, 0)
+Main.Visible = false
+Main.Active = true
+
+UICorner.Parent = Main
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(61, 61, 61)), ColorSequenceKeypoint.new(1, Color3.fromRGB(45, 45, 45))}
+UIGradient.Rotation = 270
+UIGradient.Parent = Main
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Top.Position = UDim2.new(-3.68514156e-5, 0, 0.00537040038, 0)
+Top.Size = UDim2.new(1, 0, 0.113636367, 0)
+
+UICorner_2.Parent = Top
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(39, 39, 39)), ColorSequenceKeypoint.new(1, Color3.fromRGB(45, 45, 45))}
+UIGradient_2.Rotation = 270
+UIGradient_2.Parent = Top
+
+ImageLabel.Parent = Top
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Position = UDim2.new(0, 0, -0.0472595207, 0)
+ImageLabel.Size = UDim2.new(0.0792452842, 0, 1, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6031302929"
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.0270000007, 0, 0.180000007, 0)
+TextLabel.Size = UDim2.new(0.279245287, 0, 0.600000024, 0)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Loader"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextStrokeTransparency = 0.7
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Top
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.0113207549, 0, 0.180000305, 0)
+TextLabel_2.Size = UDim2.new(0.97735852, 0, 0.600000024, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "ZLock"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Right
+
+Trans.Name = "Trans"
+Trans.Parent = Main
+Trans.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+Trans.Position = UDim2.new(0.000452831388, 0, 0.000181823969, 0)
+Trans.Size = UDim2.new(1, 0, 1, 0)
+Trans.Visible = false
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(21, 21, 21)), ColorSequenceKeypoint.new(1, Color3.fromRGB(45, 45, 45))}
+UIGradient_3.Rotation = 270
+UIGradient_3.Parent = Trans
+
+UICorner_3.Parent = Trans
+
+TextLabel_3.Parent = Trans
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.0113207549, 0, 0.373182118, 0)
+TextLabel_3.Size = UDim2.new(0.97735852, 0, 0.221590906, 0)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "ZLock"
+TextLabel_3.TextColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextWrapped = true
+
+Load.Name = "Load"
+Load.Parent = Main
+Load.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+Load.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Load.Position = UDim2.new(0.0510000549, 0, 0.369999975, 0)
+Load.Size = UDim2.new(0.880281687, 0, 0.21416074, 0)
+Load.Font = Enum.Font.Ubuntu
+Load.Text = " "
+Load.TextColor3 = Color3.fromRGB(255, 255, 255)
+Load.TextScaled = true
+Load.TextSize = 14
+Load.TextWrapped = true
+Load.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/zanlol/Zlock/main/main"))();
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 16)
+UICorner_4.Parent = Load
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 31, 21)), ColorSequenceKeypoint.new(1, Color3.fromRGB(47, 47, 47))}
+UIGradient_4.Rotation = 270
+UIGradient_4.Parent = Load
+
+TextLabel_4.Parent = Load
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Position = UDim2.new(0.00800000038, 0, 0.0500000007, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0.8125, 0)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Load ZLock"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(113, 135, 105)), ColorSequenceKeypoint.new(1, Color3.fromRGB(194, 194, 194))}
+UIGradient_5.Rotation = 270
+UIGradient_5.Parent = TextLabel_4
+
+-- Scripts:
+
+local function VPLCLV_fake_script() -- Main.DragScript 
+	local script = Instance.new('LocalScript', Main)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(VPLCLV_fake_script)()
+local function ERSSP_fake_script() -- Trans.LocalScript 
+	local script = Instance.new('LocalScript', Trans)
+
+	-- Get the GUI frame to tween
+	local frame = script.Parent.TextLabel
+	
+	-- Set the starting transparency to 0
+	frame.TextTransparency = 0
+	
+	-- Create a TweenInfo object to define the duration and easing style of the tween
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	
+	-- Create a new tween using the TweenService
+	local tween = game:GetService("TweenService"):Create(frame, tweenInfo, {TextTransparency = 1})
+	
+	-- Start the tween
+	tween:Play()
+	
+	-- Connect a function to be called when the tween completes
+	tween.Completed:Connect(function()
+		-- Set the Visible property to false once the frame has fully faded out
+		frame.Visible = false
+	end)
+	
+end
+coroutine.wrap(ERSSP_fake_script)()
+local function BNTUQSV_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	-- Get the GUI frame to tween
+	local frame = script.Parent.Trans
+	
+	-- Set the starting transparency to 0
+	frame.BackgroundTransparency = 0
+	
+	-- Create a TweenInfo object to define the duration and easing style of the tween
+	local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	
+	-- Create a new tween using the TweenService
+	local tween = game:GetService("TweenService"):Create(frame, tweenInfo, {BackgroundTransparency = 1})
+	
+	-- Start the tween
+	tween:Play()
+	
+	-- Connect a function to be called when the tween completes
+	tween.Completed:Connect(function()
+		-- Set the Visible property to false once the frame has fully faded out
+		frame.Visible = false
+	end)
+	
+end
+coroutine.wrap(BNTUQSV_fake_script)()
+local function VHARF_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		wait(5)
+		script.Parent.Parent.Parent.Main:Destroy()
+	end)
+end
+coroutine.wrap(VHARF_fake_script)()
+local function EWCFD_fake_script() -- ScreenGui.Notification Script 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--put this in starterplayerscripts or startergui
+	
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "ZLock"; --must be string
+		Text = "Loader ZLock (DM zan#8392 to buy it)"; --must be string
+		Icon = "rbxassetid://6542985566"; --optional
+		Duration = 5; -- defaults to 5 secs if no duration is set
+		Button1 = "OK";
+	})
+end
+coroutine.wrap(EWCFD_fake_script)()
+local function DLAD_fake_script() -- ScreenGui.whtielist 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local Players = game:GetService("Players")
+	local MarketplaceService = game:GetService("MarketplaceService")
+	
+	local GamePassId = 138585576 -- Replace with the ID of your game pass
+	local GuiFrame = Main -- Replace with the frame you want to show/hide
+	
+	local function onPlayerAdded(player)
+		local playerHasGamePass = false
+		pcall(function()
+			playerHasGamePass = MarketplaceService:UserOwnsGamePassAsync(player.UserId, GamePassId)
+		end)
+		if playerHasGamePass then
+			GuiFrame.Visible = true
+		end
+	end
+	
+	Players.PlayerAdded:Connect(onPlayerAdded)
+	
+	-- Check all existing players when the script starts
+	for _, player in ipairs(Players:GetPlayers()) do
+		onPlayerAdded(player)
+	end
+	
+end
+coroutine.wrap(DLAD_fake_script)()
